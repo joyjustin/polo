@@ -1,0 +1,37 @@
+git clone https://github.com/your-username/example-repo.git
+cd example-repo
+✅ Step 3: Add the Original Repo as an "Upstream"
+git remote add upstream https://github.com/original-owner/example-repo.git
+git remote -v
+You’ll see:
+origin   https://github.com/your-username/example-repo.git (fetch)
+upstream https://github.com/original-owner/example-repo.git (fetch)
+✅ Step 4: Sync Your Fork with the Original Repo
+git fetch upstream
+git checkout main
+git merge upstream/main
+git push origin main
+✅ Step 5: Create and Work on a New Branch
+git checkout -b feature-branch
+Do your work (edit code, add files etc.)
+✅ Step 6: Commit and Push Your Changes
+git add .
+git commit -m "Added a new feature"
+git push origin feature-branch
+✅ Step 7: Create a Pull Request (PR)
+Go to your forked repo on GitHub.
+Click "Pull requests" > "New pull request".
+Choose:
+Base: main (from original repo)
+Compare: feature-branch (your branch)
+Add title & description → Click "Create Pull Request"
+✅ Step 8: Handle Review Feedback
+If changes are requested:
+# Make changes
+git add .
+git commit -m "Updated feature based on review"
+git push origin feature-branch
+PR is updated automatically.
+✅ Step 9: Merging (By Maintainers)
+If approved, the maintainer clicks “Merge pull request”
+Your code is now in the original repo 🎉
