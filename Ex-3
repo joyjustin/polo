@@ -1,0 +1,82 @@
+Create new branch:
+>>git branch
+*main
+>>git branch new_branch
+>>git branch
+* main
+ new_branch
+ 
+>> git checkout new_branch
+>>git branch
+ main
+* new_branch
+ 
+>>git notepad binary
+>> git add .
+>> git commit –m “update the new branch”
+>>git push __set_upstream origin new_branch
+>>git checkout main // make main as mainbranc
+merge
+Microsoft Windows [Version 10.0.22631.4751]
+(c) Microsoft Corporation. All rights reserved.
+C:\Users\Admin\URK23CS7001>git status
+On branch main
+Your branch is up to date with 'origin/main'.
+nothing to commit, working tree clean
+C:\Users\Admin\URK23CS7001>git branch "newbranch"
+fatal: a branch named 'newbranch' already exists
+C:\Users\Admin\URK23CS7001>git add .
+C:\Users\Admin\URK23CS7001>git status
+On branch main
+Your branch is up to date with 'origin/main'.
+nothing to commit, working tree clean
+C:\Users\Admin\URK23CS7001>git branch
+* main
+new_branch
+newbranch
+newmain
+C:\Users\Admin\URK23CS7001>git checkout
+Your branch is up to date with 'origin/main'.
+C:\Users\Admin\URK23CS7001>git checkout new_branch
+Switched to branch 'new_branch'
+C:\Users\Admin\URK23CS7001>git add .
+C:\Users\Admin\URK23CS7001>dir
+Volume in drive C has no label.
+Volume Serial Number is F8E4-CDD1
+Directory of C:\Users\Admin\URK23CS7001
+24-01-2025 11:42 <DIR> .
+25-01-2025 10:23 <DIR> ..
+24-01-2025 11:44 45 binary
+24-01-2025 11:42 66 test25_1
+2 File(s) 111 bytes
+2 Dir(s) 55,153,446,912 bytes free
+C:\Users\Admin\URK23CS7001>cd binary
+The directory name is invalid.
+C:\Users\Admin\URK23CS7001>vi binary
+'vi' is not recognized as an internal or external command,
+operable program or batch file.
+C:\Users\Admin\URK23CS7001>notepad binary
+C:\Users\Admin\URK23CS7001>git add .
+C:\Users\Admin\URK23CS7001>git commit -m "ntepad updated 25.1.25"
+[new_branch 3ced18c] ntepad updated 25.1.25
+1 file changed, 3 insertions(+)
+C:\Users\Admin\URK23CS7001>git push
+fatal: The current branch new_branch has no upstream branch.
+To push the current branch and set the remote as upstream, use
+git push --set-upstream origin new_branch
+To have this happen automatically for branches without a tracking
+upstream, see 'push.autoSetupRemote' in 'git help config'.
+C:\Users\Admin\URK23CS7001>git push --set-upstream origin new_branch
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 345 bytes | 172.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+remote:
+remote: Create a pull request for 'new_branch' on GitHub by visiting:
+remote: https://github.com/durainbrindha/URK23CS7001/pull/new/new_branch
+remote:
+To https://github.com/durainbrindha/URK23CS7001.git
+* [new branch] new_branch -> new_branch
+branch 'new_branch' set up to track 'origin/new_branch'.
