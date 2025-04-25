@@ -1,0 +1,26 @@
+git config --global user.name "Your Name"
+git config --global user.email "your.email@example.com"
+Step 3: Set Default Branch Name (Optional)
+git config --global init.defaultBranch main
+Step 4: Verify Git Config
+git config --list
+🌐 Working with Remote Repositories
+📥 Clone a Remote Repository
+git clone https://github.com/username/repository.git
+🔗 Add a Remote to an Existing Local Repo
+git remote add origin https://github.com/username/repository.git
+⬆️ Push Changes to Remote
+git add .
+git commit -m "Your message here"
+git push origin main
+⬇️ Pull Changes from Remote
+git pull origin main
+📝 Replace:
+
+"Your Name" with your name
+
+"your.email@example.com" with your email
+
+"origin" with your remote name (usually origin)
+
+"main" with your branch name (e.g., main, master, etc.)
