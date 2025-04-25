@@ -1,0 +1,15 @@
+git clone link
+cd joy
+git remote add upstream link fork
+git checkout -b madhu
+git add .
+git commit -m "created new branch"
+git add .
+got commit-m "created new b"
+git push origin madhu
+git remote add upstream link fork
+git fetch upstream
+git branch
+git checkout main
+git merge upstream/main
+git push origin main
